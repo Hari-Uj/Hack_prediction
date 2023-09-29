@@ -34,7 +34,7 @@ def main():
     age = st.number_input("Age", min_value=1, max_value=100)
     job = st.selectbox('Type of job:',pd.unique(df['job']))
     marital = st.selectbox('Marital Status:',pd.unique(df['marital']))
-    education = st.selectbox('Martial Status:',pd.unique(df['education']))
+    education = st.selectbox('Education:',pd.unique(df['education']))
     default = st.selectbox(' Default:',pd.unique(df['default']))
     balance = st.number_input("Balance amount", min_value=0)
     housing  = st.selectbox('Has housing loan:',pd.unique(df['housing']))
